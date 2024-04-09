@@ -72,11 +72,21 @@ body {
   padding-bottom: 39.2rem;
 }
 @media only screen and (max-width: 48em) {
+  .header__container .btn {
+    display: none;
+  }
+}
+.header__container .burger {
+  display: none;
+}
+@media only screen and (max-width: 48em) {
+  .header__container .burger {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 48em) {
   .header__container {
     padding-bottom: 4.8rem;
-  }
-  .bnt .btn--secondary {
-    display: none;
   }
 }
 .header .hero__container {
@@ -85,37 +95,10 @@ body {
   justify-content: space-between;
   padding-bottom: 10rem;
 }
-
 @media only screen and (max-width: 48em) {
   .header .hero__container .btn {
     align-self: center;
     margin-bottom: 44px;
-  }
-  .header__container button {
-    display: none;
-  }
-  .burger-menu {
-    display: flex;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 0;
-  }
-
-  .burger_field {
-    margin-top: 36px;
-    margin-right: 20px;
-    cursor: pointer;
-  }
-
-  .burger-line {
-    display: block;
-    width: 26px;
-    height: 3px;
-    margin: 6px auto;
-    stroke-width: 2px;
-    background-color: #fff;
-    transition: 0.3s;
   }
 }
 @media only screen and (max-width: 48em) {
@@ -701,7 +684,7 @@ body {
   color: #000;
   position: fixed;
   border-radius: 16px;
-  max-width: 77rem;
+  /* max-width: 77rem; */
   min-height: 63rem;
   left: 50%;
   top: 50%;
@@ -715,7 +698,6 @@ body {
   .modal {
     overflow-y: scroll;
     border-radius: 0;
-    width: auto;
     width: 100%;
     height: 100%;
   }
@@ -724,6 +706,8 @@ body {
 .modal.active {
   opacity: 1;
   top: 50%;
+  width: 100%;
+  height: auto;
 }
 
 .form__title {
@@ -748,7 +732,7 @@ body {
   flex-direction: column;
   row-gap: 3.2rem;
   padding: 6.4rem 4.8rem;
-  padding-top: 105px;
+  padding-top: 155px;
   width: 100%;
   height: 100%;
 }
@@ -821,9 +805,6 @@ body {
 @media only screen and (max-width: 23.5em) {
   .form__review {
     padding: 4.8rem 2rem 4.4rem 2rem;
-    position: relative;
-    width: 100% !important;
-    height: 100% !important;
   }
 }
 .form__review-inputs {
@@ -847,18 +828,12 @@ body {
   width: 100%;
 }
 .form__textarea {
-  min-height: 13rem;
+  min-height: 18rem;
   padding: 1.6rem 2rem;
   border: 1px solid #ccc;
   grid-column: 1/-1;
   border-radius: 8px;
   resize: none;
-  color: #4a4240;
-  font-size: 16px;
-  font-family: DM Sans;
-  font-weight: 400;
-  line-height: 24px;
-  word-wrap: break-word;
 }
 
 .rating__title {
@@ -882,9 +857,9 @@ body {
   top: 35px;
   border: none;
   cursor: pointer;
-  padding-top: 30px;
-  padding-right: 35px;
   z-index: 1;
+  padding-top: 75px;
+  padding-right: 35px;
 }
 @media only screen and (max-width: 23.5em) {
   .btn-close-сalculated {
@@ -902,6 +877,8 @@ body {
   top: 35px;
   border: none;
   cursor: pointer;
+  padding-top: 30px;
+  padding-right: 35px;
 }
 @media only screen and (max-width: 23.5em) {
   .btn-close-modal {
@@ -1216,6 +1193,76 @@ body {
 .footer__social-media {
   display: flex;
   gap: 1.6rem;
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  width: 2.6rem;
+  border: 0;
+  padding: 0;
+  right: 20px;
+  gap: 0.6rem;
+  position: absolute;
+  background: none;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.burger :where(.top-bread, .meat, .bottom-bread) {
+  background: white;
+  height: 2px;
+  width: 26px;
+  border-radius: 4px;
+  display: block;
+  transition: transform 300ms ease;
+}
+
+.burger[aria-expanded="true"] .top-bread {
+  transform: translateY(calc(2px + 0.6rem)) rotate(45deg);
+}
+
+.burger[aria-expanded="true"] .meat {
+  transform: rotate(45deg);
+}
+
+.burger[aria-expanded="true"] .bottom-bread {
+  transform: translateY(calc(-2px - 0.6rem)) rotate(-45deg);
+}
+
+.nav__burger {
+  display: none;
+}
+
+.nav__burger.active {
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.nav__links {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  list-style: none;
+  justify-items: center;
+  align-items: center;
+}
+.nav__link {
+  font-size: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
 }
 
 /*# sourceMappingURL=styles.css.map */

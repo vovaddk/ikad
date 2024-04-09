@@ -1,6 +1,7 @@
 import initModalWindow from "./components/modal.js";
 import initSlider from "./components/slider.js";
 import initAccordion from "./components/accordion.js";
+import initBurger from "./components/burger.js";
 // Modal window initialization
 const leaveReviewModal = initModalWindow(
   ".modal",
@@ -41,7 +42,6 @@ const furnitureSlider = initSlider(
 );
 // Accordion
 initAccordion();
-var burgerMenu = document.getElementById("burgerMenu");
-burgerMenu.addEventListener("click", function () {
-  initModalWindow.style.display = "block";
-});
+initBurger();
+
+export { leaveReviewModal, calculatePriсeModal };

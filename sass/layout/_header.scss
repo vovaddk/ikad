@@ -12,6 +12,17 @@
     align-items: center;
     padding-top: 2.4rem;
     padding-bottom: 39.2rem;
+    & .btn {
+      @include respond(phone) {
+        display: none;
+      }
+    }
+    & .burger {
+      display: none;
+      @include respond(phone) {
+        display: flex;
+      }
+    }
     @include respond(phone) {
       padding-bottom: 4.8rem;
     }

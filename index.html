@@ -9,11 +9,6 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" href=" css/styles.css" />
     <script type="module" defer src=" js/main.js"></script>
     <title>IKAD Closet</title>
@@ -26,15 +21,13 @@
           alt="IKAD logo"
           class="header__logo"
         />
-        <div class="burger-menu" id="burgerMenu">
-          <div class="burger_field">
-            <span class="burger-line"></span>
-            <span class="burger-line"></span>
-            <span class="burger-line"></span>
-          </div>
-        </div>
         <button class="btn btn--secondary">
           Get started<img src=" img/Arrow-right.svg" />
+        </button>
+        <button class="burger" aria-expanded="false">
+          <div class="top-bread"></div>
+          <div class="meat"></div>
+          <div class="bottom-bread"></div>
         </button>
       </div>
       <div class="hero__container">
@@ -638,5 +631,20 @@
       </form>
     </div>
     <div class="overlay"></div>
+    <!-- NAV MOBILE-->
+    <nav class="nav__burger">
+      <ul class="nav__links">
+        <li class="nav__item">
+          <button class="nav__link calculate-price">Calculate the price</button>
+        </li>
+        <li class="nav__item">
+          <button class="nav__link leave-review">Leave a review</button>
+        </li>
+      </ul>
+      <div class="footer__social-media">
+        <a href="#"><img src=" img/Facebook.svg" alt="Facebook" /></a>
+        <a href="#"><img src=" img/Instagram.svg" alt="Instagram" /></a>
+      </div>
+    </nav>
   </body>
 </html>

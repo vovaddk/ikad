@@ -29,17 +29,6 @@ export default function initModalWindow(
     : btnOpen.addEventListener("click", openModal);
   btnClose.addEventListener("click", closeModal);
   overlay.addEventListener("click", closeModal);
-  if (!modal) {
-    throw new Error(`No element found with selector ${modalContainer}`);
-  }
+
   return { openModal, closeModal };
 }
-$(document).ready(function () {
-  $(".modal-input-label").on("input", function () {
-    if ($(this).val()) {
-      $(this).addClass("filled");
-    } else {
-      $(this).removeClass("filled");
-    }
-  });
-});
