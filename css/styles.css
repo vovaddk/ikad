@@ -712,7 +712,7 @@ body {
   transition: top 0.4s, opacity 1s;
 }
 @media only screen and (max-width: 23.5em) {
-  .modal .modal__calculate {
+  .modal {
     overflow-y: scroll;
     border-radius: 0;
     width: auto;
@@ -749,6 +749,8 @@ body {
   row-gap: 3.2rem;
   padding: 6.4rem 4.8rem;
   padding-top: 105px;
+  width: auto;
+  height: auto;
 }
 .modal-input-fname,
 .modal-input-lname,
