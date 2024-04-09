@@ -696,7 +696,7 @@ body {
   }
 }
 
-.modal .modal__calculate {
+.modal {
   background-color: #fff;
   color: #000;
   position: fixed;
@@ -712,7 +712,7 @@ body {
   transition: top 0.4s, opacity 1s;
 }
 @media only screen and (max-width: 23.5em) {
-  .modal {
+  .modal .modal__calculate {
     overflow-y: scroll;
     border-radius: 0;
     width: auto;
