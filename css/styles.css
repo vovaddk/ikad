@@ -696,7 +696,7 @@ body {
   }
 }
 
-.modal {
+.modal .modal__calculate {
   background-color: #fff;
   color: #000;
   position: fixed;
