@@ -1,0 +1,39 @@
+.cta {
+  position: relative;
+  min-height: 70rem;
+  width: 100%;
+  background-image: url(../img/bg-2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &_description {
+    color: $color-white;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    @include respond(small-phone) {
+      font-size: 18px;
+    }
+  }
+
+  &__container {
+    padding-top: 33.2rem;
+    padding-bottom: 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  &__title {
+    color: $color-white;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 116.667%;
+    @include respond(small-phone) {
+      font-size: 24px;
+    }
+  }
+}

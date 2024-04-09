@@ -1,0 +1,87 @@
+.furniture {
+  &__container {
+    @include respond(phone) {
+      overflow: hidden;
+    }
+  }
+  &__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+    @include respond(small-phone) {
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 16px;
+      font-size: 2.4rem;
+      margin-bottom: 24px;
+    }
+  }
+  &__instagram {
+    color: $color-primary;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    text-decoration: none;
+  }
+  &__images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+
+    @include respond(phone) {
+      display: flex;
+      justify-content: start;
+
+      position: relative;
+      min-height: 320px;
+      margin-bottom: 24px;
+    }
+  }
+  &__images > img {
+    @include respond(phone) {
+      max-width: 31rem;
+      width: 100%;
+      position: absolute;
+      transition: left 1s;
+    }
+  }
+}
+.gallery-navigation {
+  &__mobile {
+    display: none;
+    @include respond(phone) {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+    }
+  }
+}
+.dots {
+  display: flex;
+  position: relative;
+  gap: 8px;
+  position: relative;
+  flex-direction: row;
+  width: 72px;
+  overflow: hidden;
+  align-items: center;
+}
+.dots__dot {
+  border: none;
+  min-width: 8px;
+  min-height: 8px;
+  overflow: hidden;
+  border-radius: 50%;
+  opacity: 0.2;
+  position: absolute;
+  background-color: $color-primary;
+  transition: opacity 1s;
+}
+.dots__dot--active {
+  opacity: 1;
+}

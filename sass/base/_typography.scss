@@ -1,0 +1,26 @@
+body {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  /*font-size: 16px;*/
+
+  color: $color-grey-dark;
+}
+.heading-primary {
+  color: $color-white;
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 72px;
+  letter-spacing: 0.4px;
+  @include respond(phone) {
+    font-size: 3.2rem;
+  }
+}
+.hero-text {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 28px;
+  color: $color-white;
+  @include respond(phone) {
+    font-size: 1.8rem;
+  }
+}

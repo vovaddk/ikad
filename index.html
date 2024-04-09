@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href=" css/styles.css" />
+    <script type="module" defer src=" js/main.js"></script>
+    <title>IKAD Closet</title>
+  </head>
+  <body>
+    <header class="header u-margin-bottom-big">
+      <div class="header__container">
+        <img
+          src=" img/IKAD logo 1 white.png"
+          alt="IKAD logo"
+          class="header__logo"
+        />
+        <div class="burger-menu" id="burgerMenu">
+          <div class="burger_field">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </div>
+        </div>
+        <button class="btn btn--secondary">
+          Get started<img src=" img/Arrow-right.svg" />
+        </button>
+      </div>
+      <div class="hero__container">
+        <div class="hero__text-box">
+          <h1 class="heading-primary">
+            Dual Tower Closet Storage<br />
+            Wall Mounted
+          </h1>
+          <p class="hero-text">
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the<br />
+            1500s, when an unknown printer took a galley of type.
+          </p>
+          <button class="btn btn--primary btn-calculate-price">
+            Calculate the price<img src=" img/Arrow-right-white.svg" />
+          </button>
+        </div>
+        <div class="hero__navigation">
+          <div class="navigation-circle active">01</div>
+          <div class="navigation-circle">02</div>
+          <div class="navigation-circle">03</div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="intro__container u-margin-bottom-big">
+        <div class="underline"></div>
+        <div class="intro-column">
+          <div class="intro-column__tittle">Established in 2007</div>
+          <img
+            src=" img/Rectangle 3304.png"
+            alt="intro-img"
+            class="intro-column__img"
+          />
+        </div>
+        <div class="intro-column">
+          <h3 class="intro-column__heading">
+            It all began over three decades ago when Closet Factory engineered
+            the industry’s first truly custom closets. When we opened our doors
+            in Los Angeles, California, closets were only on the minds of a few
+            discerning people.
+          </h3>
+          <div class="intro-column__text">
+            We learned how to create closets that fit what people wanted, which
+            led us to become the leader in custom closets. Today, we continue to
+            set new standards in client care, custom closets, closet design, and
+            craftsmanship.
+          </div>
+          <div class="intro-column__text">
+            Closet Factory has become a leading closet company franchise in the
+            closet organization with over 50 locations throughout the United
+            States. This national network of closet companies and their
+            employees dedicated to creating the best custom closet solutions
+            possible, right down to the smallest detail.
+          </div>
+        </div>
+      </div>
+      <div class="benefits__container u-margin-bottom-big">
+        <div class="benefits__heading u-section-heading">Benefits</div>
+        <div class="benefits__cards">
+          <div class="benefit__card">
+            <img src=" img/Icon-1.svg" class="card-icon" />
+            <h3 class="card-title">Free shipping</h3>
+            <p class="card-description">We ship your order within 7 days.</p>
+          </div>
+          <div class="benefit__card">
+            <img src=" img/Icon-2.svg" class="card-icon" />
+            <h3 class="card-title">Made in North America</h3>
+            <p class="card-description">Proudly designed in Canada.</p>
+          </div>
+          <div class="benefit__card">
+            <img src=" img/Icon-3.svg" class="card-icon" />
+            <h3 class="card-title">Exceptional customer service</h3>
+            <p class="card-description">We are here for you 7 days a week!</p>
+          </div>
+          <div class="benefit__card">
+            <img src=" img/Icon-4.svg" class="card-icon" />
+            <h3 class="card-title">5‑year warranty</h3>
+            <p class="card-description">Products made to last.</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__container u-margin-bottom-big">
+        <div class="gallery__heading u-section-heading">
+          Look on our gallery
+
+          <div class="gallery-navigation">
+            <button class="btn-gallery btn-prev">
+              <img
+                src=" img/Arrow-Slider-Left.svg"
+                class="btn-gallery-icon__prev"
+              />
+            </button>
+            <button class="btn-gallery btn-next active">
+              <img
+                src=" img/Arrow-Slider-Right.svg"
+                class="btn-gallery-icon__next"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="gallery-images">
+          <div class="gallery__item--1">
+            <img class="img-1 gallery-slide" src=" img/1.png" />
+          </div>
+          <div class="gallery__item--2">
+            <img class="img-2 gallery-slide" src=" img/4.png" />
+          </div>
+          <div class="gallery__item--3">
+            <img class="img-3 gallery-slide" src=" img/2.png" />
+          </div>
+          <div class="gallery__item--4">
+            <img class="img-4 gallery-slide" src=" img/3.png" />
+          </div>
+        </div>
+        <div class="gallery-navigation__mobile">
+          <button class="btn-gallery btn-prev">
+            <img
+              src=" img/Arrow-Slider-Left.svg"
+              class="btn-gallery-icon__prev"
+            />
+          </button>
+          <button class="btn-gallery btn-next active">
+            <img
+              src=" img/Arrow-Slider-Right.svg"
+              class="btn-gallery-icon__next"
+            />
+          </button>
+        </div>
+
+        <button class="btn btn--gallery btn--primary btn-calculate-price">
+          Calculate the price<img src=" img/Arrow-right-white.svg" />
+        </button>
+      </div>
+      <div class="working-process__container u-margin-bottom-big">
+        <div class="working-process__section">
+          <div class="working-process__item--1">
+            <div class="item__title u-section-heading">
+              Our working<br />
+              process
+            </div>
+            <div class="item__description">
+              <div class="description__element active">
+                <div class="accordion__header">
+                  <span class="element__icon">01</span>
+                  <span class="element__text">Measuring your space</span>
+                </div>
+                <div class="working-process__mobile active">
+                  <img src=" img/Rectangle 3302.png" alt="" class="item__img" />
+                  <h3 class="item__title">
+                    Measuring your space and<br />itemizing your belongings
+                  </h3>
+                  <p class="item__description">
+                    We start by measuring your space and itemizing your
+                    belongings, then show you ideas and samples to help you
+                    create a style that’s just right for you.
+                  </p>
+                  <button
+                    class="btn btn--gallery btn--primary btn-calculate-price"
+                  >
+                    Calculate the price<img src=" img/Arrow-right-white.svg" />
+                  </button>
+                </div>
+              </div>
+              <div class="description__underline"></div>
+              <div class="description__element">
+                <div class="accordion__header">
+                  <span class="element__icon">02</span>
+                  <span class="element__text">Custom design</span>
+                </div>
+                <div class="working-process__mobile">
+                  <img src=" img/Rectangle 3302.png" alt="" class="item__img" />
+                  <h3 class="item__title">
+                    Measuring your space and<br />itemizing your belongings
+                  </h3>
+                  <p class="item__description">
+                    We start by measuring your space and itemizing your
+                    belongings, then show you ideas and samples to help you
+                    create a style that’s just right for you.
+                  </p>
+                  <button
+                    class="btn btn--gallery btn--primary btn-calculate-price"
+                  >
+                    Calculate the price<img src=" img/Arrow-right-white.svg" />
+                  </button>
+                </div>
+              </div>
+              <div class="description__underline"></div>
+              <div class="description__element">
+                <div class="accordion__header">
+                  <span class="element__icon">03</span>
+                  <span class="element__text">Custom built</span>
+                </div>
+                <div class="working-process__mobile">
+                  <img src=" img/Rectangle 3302.png" alt="" class="item__img" />
+                  <h3 class="item__title">
+                    Measuring your space and<br />itemizing your belongings
+                  </h3>
+                  <p class="item__description">
+                    We start by measuring your space and itemizing your
+                    belongings, then show you ideas and samples to help you
+                    create a style that’s just right for you.
+                  </p>
+                  <button
+                    class="btn btn--gallery btn--primary btn-calculate-price"
+                  >
+                    Calculate the price<img src=" img/Arrow-right-white.svg" />
+                  </button>
+                </div>
+              </div>
+              <div class="description__underline"></div>
+            </div>
+          </div>
+          <div class="working-process__desktop active">
+            <img src=" img/Rectangle 3302.png" alt="" class="item__img" />
+            <h3 class="item__title">
+              1Measuring your space and<br />itemizing your belongings
+            </h3>
+            <p class="item__description">
+              We start by measuring your space and itemizing your belongings,
+              then show you ideas and samples to help you create a style that’s
+              just right for you.
+            </p>
+            <button class="btn btn--gallery btn--primary btn-calculate-price">
+              Calculate the price<img src=" img/Arrow-right-white.svg" />
+            </button>
+          </div>
+          <div class="working-process__desktop">
+            <img src=" img/Rectangle 3302.png" alt="" class="item__img" />
+            <h3 class="item__title">
+              2 Measuring your space and<br />itemizing your belongings
+            </h3>
+            <p class="item__description">
+              We start by measuring your space and itemizing your belongings,
+              then show you ideas and samples to help you create a style that’s
+              just right for you.
+            </p>
+            <button class="btn btn--gallery btn--primary btn-calculate-price">
+              Calculate the price<img src=" img/Arrow-right-white.svg" />
+            </button>
+          </div>
+          <div class="working-process__desktop">
+            <img src=" img/Rectangle 3302.png" alt="" class="item__img" />
+            <h3 class="item__title">
+              3 Measuring your space and<br />itemizing your belongings
+            </h3>
+            <p class="item__description">
+              We start by measuring your space and itemizing your belongings,
+              then show you ideas and samples to help you create a style that’s
+              just right for you.
+            </p>
+            <button class="btn btn--gallery btn--primary btn-calculate-price">
+              Calculate the price<img src=" img/Arrow-right-white.svg" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="cta u-margin-bottom-big">
+        <div class="cta__container">
+          <div class="cta__title">
+            Dual Tower Closet Storage<br />
+            Wall Mounted
+          </div>
+          <p class="cta_description">
+            Lorem Ipsum has been the industry's standard dummy text ever
+            since<br />the 1500s, when an unknown printer took a galley of type.
+          </p>
+          <button class="btn btn--gallery btn--primary btn-calculate-price">
+            Calculate the price<img src=" img/Arrow-right-white.svg" />
+          </button>
+        </div>
+      </div>
+      <div class="testimonials__container">
+        <div class="testimonials__title u-section-heading u-display-center">
+          What our clients say about us
+        </div>
+        <button class="btn btn--gallery btn--primary btn-leave-review">
+          Leave a review<img src=" img/Arrow-right-white.svg" />
+        </button>
+        <div class="testimonial__component">
+          <div class="testimonial__item">
+            <div class="item__box">
+              <div class="item__header">
+                <img
+                  src=" img/Quote.svg"
+                  alt="quote"
+                  class="testimonial__icon"
+                />
+                <h5 class="testimonial__user">Jane Cooper</h5>
+                <div class="testimonial__rating">
+                  <img src=" img/Star.svg" />
+                  <img src=" img/Star.svg" />
+                  <img src=" img/Star.svg" />
+                  <img src=" img/Star.svg" />
+                  <img src=" img/Star.svg" />
+                </div>
+              </div>
+              <div class="item__description">
+                Very quick response to my inquiry and design consultant was
+                extremely professional, through and without a pushy sales
+                approach. I had a number of bids for comparison and while I
+                don't know that they will come in at the cheapest, I will more
+                likely consider them due to the consultation experience.
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial__item">
+            <div class="item__box">
+              <div class="item__header">
+                <img
+                  src=" img/Quote.svg"
+                  alt="quote"
+                  class="testimonial__icon"
+                />
+                <h5 class="testimonial__user">Hanna Herwitz</h5>
+                <div class="testimonial__rating">
+                  <img src=" img/Star.svg" />
+                  <img src=" img/Star.svg" />
+                  <img src=" img/Star.svg" />
+                  <img src=" img/Star.svg" />
+                  <img src=" img/Star.svg" />
+                </div>
+              </div>
+              <div class="item__description">
+                We are very happy with our closet. Joyce was an excellent
+                designer with great customer service. She listened to all of our
+                ideas, and incorporated them in the design while trying to save
+                $ on things that weren't necessary. Delivery and installation
+                were flawless. We are EXTREMELY happy with the closet.
+              </div>
+            </div>
+          </div>
+          <div class="testimonial__item">
+            <div class="item__box">
+              <div class="item__header">
+                <img
+                  src=" img/Quote.svg"
+                  alt="quote"
+                  class="testimonial__icon"
+                />
+                <h5 class="testimonial__user">Phillip Lipshutz</h5>
+                <div class="testimonial__rating">
+                  <img src=" img/Star.svg" />
+                  <img src=" img/Star.svg" />
+                  <img src=" img/Star.svg" />
+                  <img src=" img/Star.svg" />
+                  <img src=" img/Star.svg" />
+                </div>
+              </div>
+              <div class="item__description">
+                Excellent design, completed on time, will use their services
+                again. We had two master bedroom closets and a home office
+                closets. All were done to our satisfaction, and on time.
+              </div>
+            </div>
+          </div>
+          <div class="testimonial__item">
+            <div class="item__box">
+              <div class="item__header">
+                <img
+                  src=" img/Quote.svg"
+                  alt="quote"
+                  class="testimonial__icon"
+                />
+                <h5 class="testimonial__user">Kaiya Siphron</h5>
+                <div class="testimonial__rating">
+                  <img src=" img/Star.svg" />
+                  <img src=" img/Star.svg" />
+                  <img src=" img/Star.svg" />
+                  <img src=" img/Star.svg" />
+                  <img src=" img/Star.svg" />
+                </div>
+              </div>
+              <div class="item__description">
+                Super excited about garage storage next to my window, I love to
+                garden and it is going to look amazing...can’t wait! Prices were
+                not so high as I thought it would be, the quality cabinet and
+                all that it includes explains the cost, which made sense to me.
+                I’m not looking for cheap Residential Wood or Commercial Wood.
+                Melamine Condensed Wood is something I’ve never used before and
+                so glad it is a USA product! Our designer was also Christina
+                Garcia, she is very pleasant and listened to what I wanted and
+                pointed out some features I did not consider. I think her number
+                is 949-302-0043 and she can honor coupon promotions just like
+                advertised.
+              </div>
+            </div>
+          </div>
+          <div class="testimonial__item">
+            <div class="item__box">
+              <div class="item__header">
+                <img
+                  src=" img/Quote.svg"
+                  alt="quote"
+                  class="testimonial__icon"
+                />
+                <h5 class="testimonial__user">Kaiya Siphron</h5>
+                <div class="testimonial__rating">
+                  <img src=" img/Star.svg" />
+                  <img src=" img/Star.svg" />
+                  <img src=" img/Star.svg" />
+                  <img src=" img/Star.svg" />
+                  <img src=" img/Star.svg" />
+                </div>
+              </div>
+              <div class="item__description">
+                Very pleasant experience with a positive outcome. The consultant
+                was helpful and asked many questions on the desired outcomes
+                expected. Installation is in about three weeks so that will be
+                the final judgement criteria of Closets by Design..!
+              </div>
+            </div>
+          </div>
+          <div class="testimonial__item">
+            <div class="item__box">
+              <div class="item__header">
+                <img
+                  src=" img/Quote.svg"
+                  alt="quote"
+                  class="testimonial__icon"
+                />
+                <h5 class="testimonial__user">Ann Dorwart</h5>
+                <div class="testimonial__rating">
+                  <img src=" img/Star.svg" />
+                  <img src=" img/Star.svg" />
+                  <img src=" img/Star.svg" />
+                  <img src=" img/Star.svg" />
+                  <img src=" img/Star.svg" />
+                </div>
+              </div>
+              <div class="item__description">
+                Installing my new closets and family entertainment center this
+                week. Everything looks amazing. Marine was our designer and was
+                fantastic to work with. Very friendly and went out of her way to
+                get us exactly what we wanted at a fair price. I'd highly
+                recommend asking for her to be your designer!
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial__navigaion">
+          <button class="btn-gallery btn-prev">
+            <img
+              src=" img/Arrow-Slider-Left.svg"
+              class="btn-gallery-icon__prev"
+            />
+          </button>
+          <div class="dots__testimonial"></div>
+          <button class="btn-gallery btn-next">
+            <img
+              src=" img/Arrow-Slider-Right.svg"
+              class="btn-gallery-icon__next"
+            />
+          </button>
+        </div>
+        <button class="btn btn--gallery btn--white">
+          See more<img src=" img/Arrow-down.svg" class="btn__icon" />
+        </button>
+      </div>
+      <div class="furniture__container u-margin-bottom-big">
+        <div class="furniture__title u-section-heading">
+          Your Bestar Furniture
+          <a href="#" class="furniture__instagram">@ikadllc</a>
+        </div>
+        <div class="furniture__images">
+          <img
+            src=" img/Rectangle 3297.png"
+            class="furniture__image--1 slide"
+            alt="furniture"
+          />
+          <img
+            src=" img/Rectangle 3298.png"
+            class="furniture__image--2 slide"
+            alt="furniture"
+          />
+          <img
+            src=" img/Rectangle 3299.png"
+            class="furniture__image--3 slide"
+            alt="furniture"
+          />
+          <img
+            src=" img/Rectangle 3300.png"
+            class="furniture__image--4 slide"
+            alt="furniture"
+          />
+        </div>
+        <div class="gallery-navigation__mobile">
+          <button class="btn-gallery btn-prev">
+            <img
+              src=" img/Arrow-Slider-Left.svg"
+              class="btn-gallery-icon__prev"
+            />
+          </button>
+          <div class="dots"></div>
+          <button class="btn-gallery btn-next">
+            <img
+              src=" img/Arrow-Slider-Right.svg"
+              class="btn-gallery-icon__next"
+            />
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__copyright">©2024. All right reserved</div>
+        <img
+          src=" img/IKAD logo 1 black.png"
+          alt="logo-black"
+          class="footer__logo"
+        />
+        <div class="footer__social-media">
+          <a href="#"><img src=" img/Facebook.svg" alt="Facebook" /></a>
+          <a href="#"><img src=" img/Instagram.svg" alt="Instagram" /></a>
+        </div>
+      </div>
+    </footer>
+    <!-- aditional components  -->
+    <div class="modal">
+      <form action="" class="form__review">
+        <h4 class="form__title">Write a Review</h4>
+        <div class="form__rating">
+          <p class="rating__title">Rating*</p>
+          <div class="testimonial__rating">
+            <img src=" img/Star.svg" />
+            <img src=" img/Star.svg" />
+            <img src=" img/Star.svg" />
+            <img src=" img/Star.svg" />
+            <img src=" img/Star.svg" />
+          </div>
+        </div>
+        <div class="form__review-inputs">
+          <input
+            class="form__input-name modal-input-fname modal-input-label"
+            type="text"
+            placeholder="Full Name*"
+          />
+          <input
+            class="form__input-email modal-input-email modal-input-label"
+            type="text"
+            placeholder="Email*"
+          />
+          <textarea
+            class="form__textarea modal-input-message modal-input-label"
+            placeholder="Review Title*"
+          ></textarea>
+        </div>
+        <button class="btn btn--primary submit-form">
+          Leave a review<img src=" img/Arrow-right-white.svg" />
+        </button>
+        <button class="btn-close-modal">
+          <img src=" img/clear.svg" alt="close-modal" />
+        </button>
+      </form>
+    </div>
+    <div class="modal modal__calculate">
+      <form action="" class="form__review">
+        <h4 class="form__title">Calculate the price</h4>
+        <div class="form__title">
+          <p class="title">
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s, when an unknown printer took a galley of type.
+          </p>
+        </div>
+        <div class="form__review-inputs">
+          <input
+            class="form__input-name modal-input-fname modal-input-label"
+            type="text"
+            placeholder="Full Name*"
+          />
+          <input
+            class="form__input-last-name modal-input-lname modal-input-label"
+            type="text"
+            placeholder="Last Name*"
+          />
+          <input
+            class="form__input-email modal-input-email modal-input-label"
+            type="text"
+            placeholder="Email*"
+          />
+
+          <input
+            class="form__input-number modal-input-phone modal-input-label"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            type="tel"
+            inputmode="numeric"
+            placeholder="Phone Number*"
+          />
+          <textarea
+            class="form__textarea modal-input-message modal-input-label"
+            placeholder="Message"
+          ></textarea>
+        </div>
+        <button class="btn btn--primary btn-calculate-price submit-form">
+          Calculate the price<img src=" img/Arrow-right-white.svg" />
+        </button>
+        <button class="btn-close-сalculated">
+          <img src=" img/clear.svg" alt="close-modal" />
+        </button>
+      </form>
+    </div>
+    <div class="overlay"></div>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+.benefits {
+  &__container {
+  }
+
+  &__heading {
+    margin-bottom: 6.4rem;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 31rem));
+    gap: 24px;
+    @include respond(small-phone) {
+      gap: 12px;
+      grid-template-columns: repeat(auto-fit, 16rem);
+    }
+  }
+}
+.u-section-heading {
+}
+.benefit {
+  &__card {
+    max-width: 31rem;
+    height: auto;
+    padding: 3.2rem 2.4rem;
+    border-radius: 16px;
+    font-size: 1.6rem;
+    background-color: $color-primary;
+    @include respond(small-phone) {
+      width: 16rem;
+    }
+  }
+}
+.card-icon {
+  max-width: 4.8rem;
+  margin-bottom: 2.4rem;
+}
+.card-title {
+  color: $color-white;
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px;
+  padding-bottom: 0.3rem;
+}
+.card-description {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+}

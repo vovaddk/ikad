@@ -1,0 +1,134 @@
+.modal {
+  background-color: $color-white;
+  color: $color-black;
+  position: fixed;
+  border-radius: 16px;
+  max-width: 77rem;
+  min-height: 63rem;
+
+  left: 50%;
+  top: 50%;
+  top: -100%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  transition: top 0.4s, opacity 1s;
+  @include respond(small-phone) {
+    overflow-y: scroll;
+    border-radius: 0;
+    width: auto;
+    width: 100%;
+    height: 100%;
+  }
+}
+.modal.active {
+  opacity: 1;
+  top: 50%;
+}
+.form__title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: center;
+}
+.title {
+  margin: 0 auto;
+  max-width: 518px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.form {
+  &__review {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.2rem;
+    padding: 6.4rem 4.8rem;
+    @include respond(small-phone) {
+      padding: 4.8rem 2rem 4.4rem 2rem;
+    }
+  }
+
+  &__review-inputs {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0%, 32.5rem));
+    gap: 2.4rem;
+    @include respond(small-phone) {
+      grid-template-columns: 1fr;
+    }
+    & > input {
+      border: 1px solid #ccc;
+      padding: 0.9rem 2rem;
+      border-radius: 8px;
+      min-height: 5.6rem;
+    }
+  }
+
+  &__input-name {
+    max-width: 32.5rem;
+    width: 100%;
+  }
+  &__textarea {
+    min-height: 18rem;
+    padding: 1.6rem 2rem;
+    border: 1px solid #ccc;
+    grid-column: 1 / -1;
+    border-radius: 8px;
+    resize: none;
+  }
+}
+.rating {
+  &__title {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+}
+.submit-form {
+  margin: 0 auto;
+}
+.btn-close-сalculated {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  right: 32px;
+  top: 35px;
+  border: none;
+  cursor: pointer;
+  @include respond(small-phone) {
+    right: 20px;
+    top: 20px;
+  }
+}
+.btn-close-modal {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  right: 32px;
+  top: 35px;
+  border: none;
+  cursor: pointer;
+  @include respond(small-phone) {
+    right: 20px;
+    top: 20px;
+  }
+}
+.overlay {
+  display: none;
+}
+.overlay.active {
+  display: block;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+}
