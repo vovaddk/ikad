@@ -749,8 +749,7 @@ body {
   row-gap: 3.2rem;
   padding: 6.4rem 4.8rem;
   padding-top: 105px;
-  width: auto;
-  height: auto;
+  max-height: 752px;
 }
 .modal-input-fname,
 .modal-input-lname,
