@@ -1057,6 +1057,56 @@ body {
   width: 20px;
   height: 20px;
 }
+.modal-rating {
+  border: none;
+  float: left;
+  position: relative;
+}
+
+.modal-rating > input {
+  display: none;
+}
+
+.modal-rating > label:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f005";
+  margin: 5px;
+  font-size: 1.5rem;
+  display: inline-block;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+
+.modal-rating > .half:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f089";
+  position: absolute;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  text-shadow: 0.5px rgba(0, 0, 0);
+}
+
+.modal-rating > label {
+  color: #ddd;
+  float: right;
+  cursor: pointer;
+}
+
+.modal-rating > input:checked ~ label,
+.modal-rating:not(:checked) > label:hover,
+.modal-rating:not(:checked) > label:hover ~ label {
+  color: yellow;
+}
+
+.modal-rating > input:checked + label:hover,
+.modal-rating > input:checked ~ label:hover,
+.modal-rating > label:hover ~ input:checked ~ label,
+.modal-rating > input:checked ~ label:hover ~ label {
+  color: yellow;
+}
 
 .item__description {
   font-size: 16px;
