@@ -684,7 +684,7 @@ body {
   color: #000;
   position: fixed;
   border-radius: 16px;
-  /* max-width: 77rem; */
+  max-width: 77rem;
   min-height: 63rem;
   left: 50%;
   top: 50%;
